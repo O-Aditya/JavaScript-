@@ -8,6 +8,12 @@ console.log(accountId)
 
 //let is a variable that can be changed
 
+/*
+prefer not use var keyword, it is outdated
+var is a global variable, it can be changed
+*/
+
+
 accountEmail = "Aditya@icloud.com"
 accountPassword = "5456875"
 accountAddress = "New Delhi, India"
