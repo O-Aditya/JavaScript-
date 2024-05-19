@@ -37,7 +37,7 @@ let stMarks = {
     Shubham: 36,
     Rohan: 34
 }
-console.log(stMarks);
+console.log(stMarks.Rohan);
 
 
 // 3. Functions
