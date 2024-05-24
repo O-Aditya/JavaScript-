@@ -26,4 +26,29 @@ if (isuserloggedin) {
     console.log("Please log in");
 }
 
+//truthy and falsy values
+// falsy values are undefined, null, 0, '', NaN , {} , false
+
+// truthy values are '0', ' ', [], 
+
+//  if array is empty
+const array = [];
+if(array.length == 0){
+    console.log("Array is empty");
+} 
+//if object is empty
+const obj = {};
+if(Object.keys(obj).length == 0){
+    console.log("Object is empty");
+}
     
+
+// nullish coalescing operator
+// It is used to check the null or undefined values.
+// It is denoted by ??
+
+
+const val = null ?? 5;
+console.log(val); // 5
+
+
