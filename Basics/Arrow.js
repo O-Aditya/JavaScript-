@@ -1,8 +1,15 @@
-//Arrow function
+//iife function
+(function chai(){
+    console.log('connected');
+})();
 
- const demo = () => {
+
+//Arrow function
+const demo = () => {
     console.log(this)
     
 }
-
 demo() // window object
+
+
+
