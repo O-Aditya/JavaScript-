@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Color</title>
 </head>
+<style>
+    .main {
+        text-align: center;
+        margin-top: 100px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button#blue {
+        background-color: blue;
+        color: white;
+    }
+    button#green {
+        background-color: green;
+        color: white;
+    }
+    button#red {
+        background-color: red;
+        color: white;
+    }
+    button#yellow {
+        background-color: yellow;
+        color: black;
+    }
+</style>
 <body>
 
-    <button>Grey</button>
-    <button>Blue</button>
-    <button>Red</button>
-    <button>Yellow</button>
-    <button>Black</button>
+  <div class="main">
 
-    
+    <h1>Color Scheme Switcher</h1>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+    <button id="yellow">Yellow</button>
+
+  </div>
 </body>
+<script src="script.js"></script>
 </html>
