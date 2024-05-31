@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            
+        display: flex;
+        justify-content: center;
+         background-color: antiquewhite;
+        }
+        #images{
+            display: flex;
+            justify-content: space-between;
+            transition: background-color 1s ease-in-out;
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
+        }
+    </style>
+    <title>Event in javascript </title>
+</head>
+<body>
+    <div class="main"><h1>Amazing Images</h1></div>
+    <div class="">
+        <ul id="images">
+            <li>
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="laptop" width="300" height="200" id="laptop">
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="desk" width="300" height="200" id="desk">
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="vr" width="300" height="200" id="vr">
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/257699/pexels-photo-257699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drone" width="300" height="200" id="drone">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    const images = document.getElementById('images');
+    setInterval(function(){
+        images.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    },100)
+    images.addEventListener('click', function(e){
+        console.log("Clicke inside ul");
+    },false)
+
+    // Event in javascript
+    //important events
+    // 1. click event  2.type 3.timestamp 4.preventDefault 5.stopPropagation
+    // 6. target 7. currentTarget 8. event bubbling 9. event capturing 10. event delegation
+    // 11. toElement 12. srcElement 13.currentTarget 14. clientX 15. clientY 16. offsetX 17. offsetY
+</script>
+
+</html>
