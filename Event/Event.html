@@ -2,6 +2,7 @@
 <html>
 <head>
     <style>
+
         :root {
             --box-color: #ff0000;
             --box-hover-color: #00ff00;
@@ -65,7 +66,7 @@
         }
     </style>
 </head>
-<body>
+<body style="transition: background-color 1s ease-in-out;">
     <div class="card">
         <div class="container">
             <div class="box" id="box"></div>
@@ -91,8 +92,12 @@
 
         colorButton.addEventListener('click', function() {
             box.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-            body.style.backgroundColor = '#' + Math.floor(Math.random()*16587456).toString(16);
+            
         });
+
+        setInterval(function() {
+            body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        }, 1000);
 
         textInput.addEventListener('input', function(event) {
             console.log('Input event');
